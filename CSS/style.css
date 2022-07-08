@@ -1,0 +1,613 @@
+html {   
+    background-image: url(../images/Portfolio_BG_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    display: block;
+    margin: 0px;
+}
+.profilePic {
+    border-radius: 50%;
+    width: 18%;
+    height: 15%;
+    margin: 8%;
+    box-shadow: #00000088 1px 4px;
+}
+.heroImg > button {
+    border-radius: 4px;
+    background-color: #9D0000;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    width: 6%;
+    height:6%;
+    text-align: left;
+    margin:0%;
+    margin-bottom: 16%;
+    box-shadow: black 1px 3px;
+    grid-area: hover;
+    transition: .1s ease-in;
+}
+.heroImg > button:hover{
+    transition: 0.3s ease-out; 
+    width: 10%;
+    text-align: left;
+    box-shadow: black 1px 3px;
+    
+}
+.inline-block { 
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Bentham', serif;
+}
+.logo {
+    width: 10%;
+    padding: 0%;
+    text-align: left;
+    margin-left: 1%;
+}
+nav {
+    display:block;
+    display: flex;
+    align-items:flex;
+    padding: 0%;
+    color: white;
+    width: 100%;
+}    
+.navigation {
+    background-color: black;
+    opacity: .75;
+    position: relative;
+    padding: 0px;
+}
+nav > ul {
+    width: 20%;
+    padding: 2%;
+    margin-left: 85%;
+    margin:auto;
+    font-size: 26px;
+}
+.heroImg {
+    padding: 3%;
+    margin-top: 5%;
+}
+
+.content {
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items:flex;
+    background-color: #373738;
+    color: white;
+    padding-top: 0%;
+    margin-top: 5.5%;
+}
+footer > ul {
+    width: 100%;
+    padding: 0%;
+    margin-left: 42%;
+    font-size: 18px;
+}
+.heroImg > h2 {
+    margin-right: 17%;
+    padding: 2%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+.heroImg > p {
+    color: white;
+    font-family: 'Abhaya Libre', serif;
+    text-align: right;
+    margin-top:-41%;
+    font-size: 32px;
+}
+
+
+
+/* My Skills Section*/
+
+
+
+div > .userResearch {
+    border-radius: 10%;
+}
+div > .prototypeInteraction {
+    border-radius: 10%;
+}
+div > .webDevelopment {
+    border-radius: 10%;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+.flexContainer > div {
+    width: 33%;
+    margin: 1%;
+    padding:1%;
+    background-color: #00000099;
+}
+#mySkills > h1 {
+    color: white;
+    background-color: #9D0000;
+    padding: .75%;
+    margin-top: 10%;
+    font-family: 'Bentham', serif;
+    box-shadow: #00000088 0px 2px;
+    padding-left: 6%;
+    font-size: 38px;
+}
+.userResearch > p {
+    margin: 0%;
+    padding: 10%;
+    font-size: 24px;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+}
+.userResearch > img {
+    margin-left: 32%;
+    border-radius: 50%;
+}
+.userResearch > h3 {
+    margin-left: 34%;
+    color: white;
+    font-size: 32px;
+}
+.prototypeInteraction > p {
+    margin: 0%;
+    padding: 10%;
+    font-size: 24px;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+}
+.prototypeInteraction > img {
+    margin-left: 34%;
+    background-color: white;
+    border-radius: 50%;
+}
+.prototypeInteraction > h3 {
+    margin-left: 2%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.webDevelopment > p {
+    margin: 0%;
+    padding: 10%;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+}
+.webDevelopment > img {
+    margin-left: 35%;
+}
+.webDevelopment > h3 {
+    margin-left: 33%;
+    color: white;
+    font-size: 30px;
+}
+
+/* My Work Section */
+
+.workGrid {
+    display: grid;
+    grid-template-areas:
+    'image1 topBox'
+    'middleBox image2'
+    'image3 bottomBox';
+
+    grid-template-rows: 390px 390px 390px;
+    grid-template-columns: 665px; 
+}
+
+.topBox {
+    grid-area: topBox;
+    background-color: #00000099;
+    border-radius: 0px 50px 50px 0px;
+    margin-bottom: 13px;
+    margin-right: 3%;
+}
+.topBox > p {
+    color: white;
+    font-size: 22px;
+    margin-left: 65%;
+}
+.topBox > h4 {
+    font-size: 44px;
+    margin: 0%;
+    color : white;
+    margin-left: 65%;
+    margin-bottom: -7%;
+    margin-top: 9%;
+}
+.topBox > img {
+    max-width: 100%;
+}
+
+
+.middleBox {
+    grid-area: middleBox;
+    background-color: #00000099;
+    margin-left: 6%;
+    border-radius: 50px 0px 0px 50px;
+}
+.middleBox > h4 {
+    color: white;
+    font-size: 41px;
+    margin-left: 2%;
+    margin-top:13%;
+}
+.middleBox > p {
+    color: white;
+    font-size: 22px;
+    margin-left: 4%;
+}
+
+
+.bottomBox {
+    grid-area: bottomBox;
+    background-color: #00000099;
+    margin-right: 3%;
+    border-radius: 0px 50px 50px 0px;
+    margin-top: 13px;
+}
+.bottomBox > p {
+    color: white;
+    font-size: 22px;
+    margin-left: 65%;
+}
+.bottomBox > h4 {
+    font-size: 44px;
+    margin: 0%;
+    color : white;
+    margin-left: 65%;
+    margin-bottom: -7%;
+    margin-top: 9%;
+}
+
+
+.image1{
+    grid-area: image1;
+    background-color: #00000099;
+    margin-bottom: 2%;
+    margin-left: 6%;
+    border-radius: 50px 0px 0px 50px;
+}
+.image1 > img {
+    width: 47%;
+    height: auto;
+    margin-left: 50%;
+    margin-top: 2%;
+}
+
+
+.image2{
+    grid-area: image2;
+    background-color: #00000099;
+    border-radius: 0px 50px 50px 0px;
+    margin-right: 3%;
+}
+.image2 > img {
+    max-width: 100%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+
+
+
+.image3 { 
+    grid-area: image3;
+    background-color: #00000099;
+    margin-top: 2%;
+    margin-left: 6%;
+    border-radius: 50px 0px 0px 50px;
+}
+.image3 > img {
+    max-width: 100%;
+    margin-left:10%;
+    margin-top: 2%;
+}
+.topBox > button {
+    width: 392px;
+    height: 86px;
+    margin-left: 65%;
+    margin-top: 15.5%;
+    border-radius: 15px 0px 50px 0px;
+    background-color: #9D0000;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    box-shadow: black 1px 3px;
+}
+.middleBox > button {
+    width: 392px;
+    height: 86px;
+    margin-top: 25px;
+    background-color: #9D0000;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    box-shadow: black 1px 3px;
+    border-radius: 0px 15px 0px 50px;
+}
+.bottomBox > button {
+    width: 392px;
+    height: 86px;
+    margin-left: 65%;
+    margin-top: 10.6%;
+    border-radius: 15px 0px 50px 0px;
+    background-color: #9D0000;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    box-shadow: black 1px 3px;
+}
+#myWork > h1 {
+    color: white;
+    background-color: #9D0000;
+    padding: .75%;
+    font-family: 'Bentham', serif;
+    box-shadow: #00000088 0px 2px;
+    padding-left: 6%;
+    font-size: 38px;
+}
+section > h3 {
+    color:white;
+    background-color:#9D0000;
+    padding: 1%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: underline;
+    box-shadow: #00000088 0px 3px;
+    margin-left: 55px;
+    margin-right: 55px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+
+/*Mobile Media Query*/
+@media only screen and (max-width: 700px) {
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-areas:
+        'image1' 
+        'topBox'
+        'image2'
+        'middleBox'
+        'image3' 
+        'bottomBox';
+    
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr; 
+    }
+    .flexContainer > div {
+        width: 96%;
+        margin: 1%;
+        padding:1%;
+        background-color: #00000099;
+    }
+    footer > ul {
+        width: 100%;
+        padding: 0%;
+        margin-left: 35%;
+        font-size: 18px;
+    }
+
+
+
+    .topBox {
+        grid-area: topBox;
+        background-color: #00000099;
+        border-radius: 0px 0px 50px 50px;
+        margin-bottom: 92px;
+        margin-right: 0%;
+        padding-top: 4%;
+    }
+    .topBox > p {
+        color: white;
+        font-size: 22px;
+        margin-left:59%;
+        margin-top: -1%;
+        text-decoration: underline;
+    }
+    .topBox > h4 {
+        font-size: 41px;
+        margin-left: 5%;
+        color : white;
+    }
+    .topBox > img {
+        padding-left: 7%;
+    }
+    
+    
+    .middleBox {
+        grid-area: middleBox;
+        background-color: #00000099;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        height: 78%;
+        border-radius: 0px 0px 50px 50px;
+    }
+    .middleBox > h4 {
+        color: white;
+        font-size: 41px;
+        margin-top: 58px;
+    }
+    .middleBox > p {
+        color: white;
+        font-size: 22px;
+        margin-left:2%;
+        text-decoration: underline;
+    }
+    
+    
+    .bottomBox {
+        grid-area: bottomBox;
+        background-color: #00000099;
+        margin-right: 0%;
+        margin-left:0%;
+        border-radius: 0px 0px 50px 50px;
+        margin-top: 0px;
+        height: 67%;
+    }
+    .bottomBox > p {
+        color: white;
+        font-size: 22px;
+        margin-left:2%;
+    }
+    .bottomBox > h4 {
+        font-size: 41px;
+        margin: 0%;
+        margin-left: 35%;
+        color : white;
+    }
+    
+    
+    .image1{
+        grid-area: image1;
+        background-color: #00000099;
+        margin-bottom: 0%;
+        margin-left: 0%;  
+        border-radius: 50px 50px 0px 0px;
+    }
+    .image1 > img {
+        width: 42%;
+        height: 100%;
+        margin-left: 25%;
+    }
+    
+    
+    .image2{
+        grid-area: image2;
+        background-color: #00000099;
+        border-radius: 50px 50px 0px 0px;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .image2 > img {
+        max-width: 100%;
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+    .image3 { 
+        grid-area: image3;
+        background-color: #00000099;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right:0%;
+        border-radius: 50px 50px 0px 0px;
+    }
+    .image3 > img {
+        max-width: 100%;
+        margin-top:2%;
+        margin-left: 2%;
+    }
+    .topBox > button {
+        width: 392px;
+        height: 86px;
+        margin-left: 43%;
+        margin-top:97px;
+        border-radius: 15px 0px 50px 0px;
+        background-color: #9D0000;
+        color: white;
+        font-size: 24px;
+        font-family: 'Assistant', sans-serif;
+        box-shadow: black 1px 3px;
+    }
+    .middleBox > button {
+        width: 392px;
+        height: 86px;
+        margin-top: 1%;
+        background-color: #9D0000;
+        color: white;
+        font-size: 24px;
+        font-family: 'Assistant', sans-serif;
+        box-shadow: black 1px 3px;
+        border-radius: 0px 15px 0px 50px;
+    }
+    .bottomBox > button {
+        width: 392px;
+        height: 86px;
+        margin-left:43%;
+        margin-top: 57px;
+        border-radius: 15px 0px 50px 0px;
+        background-color: #9D0000;
+        color: white;
+        font-size: 24px;
+        font-family: 'Assistant', sans-serif;
+        box-shadow: black 1px 3px;
+    }
+    
+    .logo {
+        width: 40%;
+        padding: 3%;
+        margin-left: 25%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        color: white;
+        width: 100%;
+    }
+    nav > ul {
+        width: 90%;
+        padding-bottom:3%;
+        font-size: 26px;
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .heroImg {
+        padding: 3%;
+        margin-top: 5%;
+    }    
+    .heroImg > h2 {
+        margin-left: 41%;
+        margin-bottom: 1%;
+        margin-top: -67%;
+        padding-bottom: 14%;
+        font-size: 28px;
+        color: white;
+    }
+    .content {
+        margin: 3%;
+    }
+    .profilePic {
+        border-radius: 50%;
+        box-shadow: #00000088 1px 4px;
+        margin: 4%;
+        width:40%;
+    }
+    .heroImg > button {
+        border-radius: 4px;
+        background-color: #9D0000;
+        color: white;
+        font-size: 18px;
+        font-family: 'Assistant', sans-serif;
+        width: 14%;
+        text-align: left;
+        margin-left: 3%;
+        margin-top: 6%;
+        box-shadow: black 1px 3px;
+        grid-area: hover;
+        transition: .1s ease-in;
+    }
+  
+}
+
+
+
