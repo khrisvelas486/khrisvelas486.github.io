@@ -58,7 +58,7 @@ nav {
 .navigation {
     background-color: black;
     opacity: .75;
-    position: relative;
+    position: fixed;
     padding: 0px;
 }
 nav > ul {
@@ -319,8 +319,8 @@ div > .webDevelopment {
 .topBox > button {
     width: 392px;
     height: 86px;
-    margin-left: 65%;
-    margin-top: 15.5%;
+    margin-left: 73.5%;
+    margin-top: 10.8%;
     border-radius: 15px 0px 50px 0px;
     background-color: #9D0000;
     color: white;
@@ -342,7 +342,7 @@ div > .webDevelopment {
 .bottomBox > button {
     width: 392px;
     height: 86px;
-    margin-left: 65%;
+    margin-left: 74%;
     margin-top: 10.6%;
     border-radius: 15px 0px 50px 0px;
     background-color: #9D0000;
@@ -405,6 +405,15 @@ section > h3 {
         padding: 0%;
         margin-left: 35%;
         font-size: 18px;
+    }
+
+    .heroImg > p {
+        color: white;
+        font-family: 'Abhaya Libre', serif;
+        text-align: left;
+        margin-top:-59%;
+        margin-left: 286px;
+        font-size: 22px;
     }
 
 
@@ -485,7 +494,7 @@ section > h3 {
         border-radius: 50px 50px 0px 0px;
     }
     .image1 > img {
-        width: 42%;
+        width: 46%;
         height: 100%;
         margin-left: 25%;
     }
@@ -520,7 +529,7 @@ section > h3 {
         width: 392px;
         height: 86px;
         margin-left: 43%;
-        margin-top:97px;
+        margin-top:105px;
         border-radius: 15px 0px 50px 0px;
         background-color: #9D0000;
         color: white;
@@ -531,7 +540,7 @@ section > h3 {
     .middleBox > button {
         width: 392px;
         height: 86px;
-        margin-top: 1%;
+        margin-top: -6%;
         background-color: #9D0000;
         color: white;
         font-size: 24px;
@@ -590,7 +599,7 @@ section > h3 {
         border-radius: 50%;
         box-shadow: #00000088 1px 4px;
         margin: 4%;
-        width:40%;
+        width:32%;
     }
     .heroImg > button {
         border-radius: 4px;
@@ -600,7 +609,7 @@ section > h3 {
         font-family: 'Assistant', sans-serif;
         width: 14%;
         text-align: left;
-        margin-left: 3%;
+        margin-left: 10%;
         margin-top: 6%;
         box-shadow: black 1px 3px;
         grid-area: hover;
