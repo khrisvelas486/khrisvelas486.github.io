@@ -2,7 +2,14 @@ html {
     background-image: url(../images/Portfolio_BG_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-behavior: smooth;
 }
+.btn {
+    display: inline-block;
+    color: white;
+    
+}
+
 body {
     display: block;
     margin: 0px;
@@ -24,7 +31,7 @@ body {
     height:6%;
     text-align: left;
     margin:0%;
-    margin-bottom: 16%;
+    margin-bottom: 20%;
     box-shadow: black 1px 3px;
     grid-area: hover;
     transition: .1s ease-in;
@@ -59,7 +66,9 @@ nav {
     background-color: black;
     opacity: .75;
     position: fixed;
+    top:0%;
     padding: 0px;
+    height:90px;
 }
 nav > ul {
     width: 20%;
@@ -109,8 +118,6 @@ footer > ul {
 
 
 /* My Skills Section*/
-
-
 
 div > .userResearch {
     border-radius: 10%;
@@ -200,9 +207,9 @@ div > .webDevelopment {
 .workGrid {
     display: grid;
     grid-template-areas:
-    'image1 topBox'
+    'topBox image1'
     'middleBox image2'
-    'image3 bottomBox';
+    'bottomBox image3';
 
     grid-template-rows: 390px 390px 390px;
     grid-template-columns: 665px; 
@@ -211,27 +218,21 @@ div > .webDevelopment {
 .topBox {
     grid-area: topBox;
     background-color: #00000099;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 50px 0px 0px 50px;
     margin-bottom: 13px;
-    margin-right: 3%;
+    margin-left: 6%;
 }
 .topBox > p {
     color: white;
     font-size: 22px;
-    margin-left: 65%;
+    margin-left: 4%;
 }
 .topBox > h4 {
-    font-size: 44px;
-    margin: 0%;
-    color : white;
-    margin-left: 65%;
-    margin-bottom: -7%;
-    margin-top: 9%;
+    color: white;
+    font-size: 41px;
+    margin-left: 2%;
+    margin-top:13%;
 }
-.topBox > img {
-    max-width: 100%;
-}
-
 
 .middleBox {
     grid-area: middleBox;
@@ -253,38 +254,35 @@ div > .webDevelopment {
 
 
 .bottomBox {
-    grid-area: bottomBox;
     background-color: #00000099;
-    margin-right: 3%;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 50px 0px 0px 50px;
     margin-top: 13px;
+    margin-left: 6%;
 }
+
 .bottomBox > p {
     color: white;
     font-size: 22px;
-    margin-left: 65%;
+    margin-left: 4%;
 }
 .bottomBox > h4 {
-    font-size: 44px;
-    margin: 0%;
-    color : white;
-    margin-left: 65%;
-    margin-bottom: -7%;
-    margin-top: 9%;
+    color: white;
+    font-size: 41px;
+    margin-left: 2%;
+    margin-top:13%;
 }
 
 
 .image1{
     grid-area: image1;
     background-color: #00000099;
-    margin-bottom: 2%;
-    margin-left: 6%;
-    border-radius: 50px 0px 0px 50px;
+    margin-bottom: 13px;
+    margin-right: 6%;
+    border-radius: 0px 50px 50px 0px;
 }
 .image1 > img {
-    width: 47%;
-    height: auto;
-    margin-left: 50%;
+    max-width: 100%;
+    margin-left: 15%;
     margin-top: 2%;
 }
 
@@ -293,12 +291,12 @@ div > .webDevelopment {
     grid-area: image2;
     background-color: #00000099;
     border-radius: 0px 50px 50px 0px;
-    margin-right: 3%;
+    margin-right: 6%;
 }
 .image2 > img {
     max-width: 100%;
-    margin-left: 15%;
-    margin-top: 2%;
+    margin-left: 0%;
+    margin-top: 5%;
 }
 
 
@@ -307,26 +305,25 @@ div > .webDevelopment {
 .image3 { 
     grid-area: image3;
     background-color: #00000099;
-    margin-top: 2%;
-    margin-left: 6%;
-    border-radius: 50px 0px 0px 50px;
+    margin-top: 13px;
+    margin-right: 6%;
+    border-radius: 0px 50px 50px 0px;
 }
 .image3 > img {
     max-width: 100%;
-    margin-left:10%;
-    margin-top: 2%;
+    margin-left: 0%;
+    margin-top: 5%;
 }
 .topBox > button {
     width: 392px;
     height: 86px;
-    margin-left: 73.5%;
-    margin-top: 10.8%;
-    border-radius: 15px 0px 50px 0px;
+    margin-top: 58px;
     background-color: #9D0000;
     color: white;
     font-size: 18px;
     font-family: 'Assistant', sans-serif;
     box-shadow: black 1px 3px;
+    border-radius: 0px 15px 0px 50px;
 }
 .middleBox > button {
     width: 392px;
@@ -342,14 +339,13 @@ div > .webDevelopment {
 .bottomBox > button {
     width: 392px;
     height: 86px;
-    margin-left: 74%;
-    margin-top: 10.6%;
-    border-radius: 15px 0px 50px 0px;
+    margin-top: 58px;
     background-color: #9D0000;
     color: white;
     font-size: 18px;
     font-family: 'Assistant', sans-serif;
     box-shadow: black 1px 3px;
+    border-radius: 0px 15px 0px 50px;
 }
 #myWork > h1 {
     color: white;
@@ -375,8 +371,394 @@ section > h3 {
 }
 
 
-/*Mobile Media Query*/
+/*///////////////////Media Query 4K///////////////*/
+
+@media only screen and (max-width: 2560px) {
+
+    .navigation {
+        background-color: black;
+        opacity: .75;
+        position: fixed;
+        top:0%;
+        width: 100%;
+        height: 90px;
+        padding: 0px;
+    }
+    .logo {
+        width: 10%;
+        padding: 0%;
+        margin-left: 1%;
+    }
+     .workGrid {
+        display: grid;
+        grid-template-areas:
+        'topBox middleBox bottomBox'
+        'image1 image2 image3';
+    
+        grid-template-rows: 390px 390px 390px;
+        justify-content: space-evenly;
+    }
+    
+    .topBox {
+        background-color: #00000099;
+        border-radius: 50px 50px 0px 0px;
+        margin-bottom:0px;
+        margin-left: 0%;
+    }
+    .topBox > p {
+        color: white;
+        font-size: 22px;
+        margin-left: 4%;
+    }
+    .topBox > h4 {
+        color: white;
+        font-size: 41px;
+        margin-left: 2%;
+        margin-top:13%;
+    }
+    
+    .middleBox {
+        grid-area: middleBox;
+        background-color: #00000099;
+        border-radius: 50px 50px 0px 0px;
+        margin-left:0%;
+    }
+    .middleBox > h4 {
+        color: white;
+        font-size: 41px;
+        margin-left: 2%;
+        margin-top:13%;
+    }
+    .middleBox > p {
+        color: white;
+        font-size: 22px;
+        margin-left: 4%;
+    }
+    
+    
+    .bottomBox {
+        background-color: #00000099;
+        border-radius: 50px 50px 0px 0px;
+        margin-top: 0px;
+        margin-left:0%;
+    }
+    
+    .bottomBox > p {
+        color: white;
+        font-size: 22px;
+        margin-left: 4%;
+    }
+    .bottomBox > h4 {
+        color: white;
+        font-size: 41px;
+        margin-left: 2%;
+        margin-top:13%;
+    }
+    
+    
+    .image1{
+        grid-area: image1;
+        background-color: #00000099;
+        margin-bottom: 0px;
+        margin-right: 0%;
+        border-radius: 0px 0px 50px 50px;
+    }
+    .image1 > img {
+        max-width: 100%;
+        margin-left: 28%;
+        margin-top: 4%;
+    }
+    
+    
+    .image2{
+        grid-area: image2;
+        background-color: #00000099;
+        border-radius: 0px 0px 50px 50px;
+        margin-right: 0%;
+    }
+    .image2 > img {
+        max-width: 100%;
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+    
+     .image3 { 
+        grid-area: image3;
+        background-color: #00000099;
+        margin-top: 0px;
+        margin-right: 0%;
+        border-radius: 0px 0px 50px 50px;
+    }
+    .image3 > img {
+        max-width: 100%;
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+
+
+
+    .topBox > button {
+        width: 392px;
+        height: 86px;
+        margin-top: 10px;
+        margin-left: 20%;
+        background-color: #9D0000;
+        color: white;
+        font-size: 18px;
+        font-family: 'Assistant', sans-serif;
+        box-shadow: black 1px 3px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .middleBox > button {
+        width: 392px;
+        height: 86px;
+        margin-top: -36px;
+        margin-left: 20%;
+        background-color: #9D0000;
+        color: white;
+        font-size: 18px;
+        font-family: 'Assistant', sans-serif;
+        box-shadow: black 1px 3px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .bottomBox > button {
+        width: 392px;
+        height: 86px;
+        margin-top: 10px;
+        margin-left: 20%;
+        background-color: #9D0000;
+        color: white;
+        font-size: 18px;
+        font-family: 'Assistant', sans-serif;
+        box-shadow: black 1px 3px;
+        border-radius: 20px 20px 20px 20px;
+    }
+    #myWork > h1 {
+        color: white;
+        background-color: #9D0000;
+        padding: .75%;
+        font-family: 'Bentham', serif;
+        box-shadow: #00000088 0px 2px;
+        padding-left: 6%;
+        font-size: 38px;
+    }
+    section > h3 {
+        color:white;
+        background-color:#9D0000;
+        padding: 1%;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Assistant', sans-serif;
+        text-decoration: underline;
+        box-shadow: #00000088 0px 3px;
+        margin-left: 55px;
+        margin-right: 55px;
+        border-radius: 25px 25px 25px 25px;
+    }
+}
+
+/*////////////Media Query Laptop////////////////*/
+
+@media only screen and (max-width: 1260px) {
+
+    .navigation {
+        background-color: black;
+        opacity: .75;
+        position: fixed;
+        top:0%;
+        padding: 0px;
+        height:90px;
+    }
+    
+    .workGrid {
+    display: grid;
+    grid-template-areas:
+    'topBox image1'
+    'middleBox image2'
+    'bottomBox image3';
+
+    grid-template-rows: 390px 390px 390px;
+    grid-template-columns: 665px; 
+}
+nav > ul {
+    width: 32%;
+    padding: 2%;
+    margin-left: 85%;
+    margin:auto;
+    font-size: 26px;
+}
+
+.topBox {
+    background-color: #00000099;
+    border-radius: 50px 0px 0px 50px;
+    margin-bottom: 13px;
+    margin-left: 6%;
+}
+.topBox > p {
+    color: white;
+    font-size: 22px;
+    margin-left: 4%;
+}
+.topBox > h4 {
+    color: white;
+    font-size: 41px;
+    margin-left: 2%;
+    margin-top:13%;
+}
+
+.middleBox {
+    grid-area: middleBox;
+    background-color: #00000099;
+    margin-left: 6%;
+    border-radius: 50px 0px 0px 50px;
+}
+.middleBox > h4 {
+    color: white;
+    font-size: 41px;
+    margin-left: 2%;
+    margin-top:13%;
+}
+.middleBox > p {
+    color: white;
+    font-size: 22px;
+    margin-left: 4%;
+}
+
+
+.bottomBox {
+    background-color: #00000099;
+    border-radius: 50px 0px 0px 50px;
+    margin-top: 13px;
+    margin-left: 6%;
+}
+
+.bottomBox > p {
+    color: white;
+    font-size: 22px;
+    margin-left: 4%;
+}
+.bottomBox > h4 {
+    color: white;
+    font-size: 41px;
+    margin-left: 2%;
+    margin-top:13%;
+}
+
+
+.image1{
+    grid-area: image1;
+    background-color: #00000099;
+    margin-bottom: 13px;
+    margin-right: 6%;
+    border-radius: 0px 50px 50px 0px;
+}
+.image1 > img {
+    max-width: 100%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+
+.image2{
+    grid-area: image2;
+    background-color: #00000099;
+    border-radius: 0px 50px 50px 0px;
+    margin-right: 6%;
+}
+.image2 > img {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+
+
+
+
+.image3 { 
+    grid-area: image3;
+    background-color: #00000099;
+    margin-top: 13px;
+    margin-right: 6%;
+    border-radius: 0px 50px 50px 0px;
+}
+.image3 > img {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 5%;
+}
+.topBox > button {
+    width: 392px;
+    height: 86px;
+    margin-top: 58px;
+    margin-left: 0%;
+    background-color: #9D0000;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    box-shadow: black 1px 3px;
+    border-radius: 0px 15px 0px 50px;
+}
+.middleBox > button {
+    width: 392px;
+    height: 86px;
+    margin-top: 25px;
+    margin-left: 0%;
+    background-color: #9D0000;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    box-shadow: black 1px 3px;
+    border-radius: 0px 15px 0px 50px;
+}
+.bottomBox > button {
+    width: 392px;
+    height: 86px;
+    margin-top: 58px;
+    margin-left: 0%;
+    background-color: #9D0000;
+    color: white;
+    font-size: 18px;
+    font-family: 'Assistant', sans-serif;
+    box-shadow: black 1px 3px;
+    border-radius: 0px 15px 0px 50px;
+}
+#myWork > h1 {
+    color: white;
+    background-color: #9D0000;
+    padding: .75%;
+    font-family: 'Bentham', serif;
+    box-shadow: #00000088 0px 2px;
+    padding-left: 6%;
+    font-size: 38px;
+}
+section > h3 {
+    color:white;
+    background-color:#9D0000;
+    padding: 1%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Assistant', sans-serif;
+    text-decoration: underline;
+    box-shadow: #00000088 0px 3px;
+    margin-left: 55px;
+    margin-right: 55px;
+    border-radius: 25px 25px 25px 25px;
+}
+}
+
+
+/*//////////////Media Query Mobile//////////////*/
+
 @media only screen and (max-width: 700px) {
+
+    .navigation {
+        background-color: black;
+        opacity: .75;
+        position: fixed;
+        top:0%;
+        padding: 0px;
+        height:90px;
+    }
     .flexContainer {
         flex-direction: column;
         width: 100%;
@@ -424,18 +806,19 @@ section > h3 {
         border-radius: 0px 0px 50px 50px;
         margin-bottom: 92px;
         margin-right: 0%;
-        padding-top: 4%;
+        margin-left: 0%;
     }
     .topBox > p {
         color: white;
         font-size: 22px;
-        margin-left:59%;
-        margin-top: -1%;
+        margin-left:50%;
+        margin-bottom: -4%;
         text-decoration: underline;
     }
     .topBox > h4 {
         font-size: 41px;
         margin-left: 5%;
+        margin-bottom: -2%;
         color : white;
     }
     .topBox > img {
@@ -455,6 +838,8 @@ section > h3 {
         color: white;
         font-size: 41px;
         margin-top: 58px;
+        margin-right: 3%;
+        text-align: right;
     }
     .middleBox > p {
         color: white;
@@ -490,13 +875,13 @@ section > h3 {
         grid-area: image1;
         background-color: #00000099;
         margin-bottom: 0%;
-        margin-left: 0%;  
+        margin-left: 0%;
+        margin-right:0%;  
         border-radius: 50px 50px 0px 0px;
     }
     .image1 > img {
-        width: 46%;
-        height: 100%;
-        margin-left: 25%;
+        margin-top: 5%;
+        margin-left: 30%;
     }
     
     
@@ -529,7 +914,7 @@ section > h3 {
         width: 392px;
         height: 86px;
         margin-left: 43%;
-        margin-top:105px;
+        margin-top:68px;
         border-radius: 15px 0px 50px 0px;
         background-color: #9D0000;
         color: white;
@@ -562,23 +947,21 @@ section > h3 {
     }
     
     .logo {
-        width: 40%;
-        padding: 3%;
-        margin-left: 25%;
+        width: 26%;
+        padding: 0%;
+        padding-right: 40px;
+        margin-left: 14%;
     }
     nav {
         display: flex;
-        flex-direction: column;
         padding: 0%;
         color: white;
         width: 100%;
     }
     nav > ul {
-        width: 90%;
-        padding-bottom:3%;
+        width: 83%;
+        padding-bottom:2%;
         font-size: 26px;
-        display:flex;
-        justify-content: space-evenly;
     }
     .heroImg {
         padding: 3%;
@@ -617,6 +1000,3 @@ section > h3 {
     }
   
 }
-
-
-

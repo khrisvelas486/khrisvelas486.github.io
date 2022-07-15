@@ -6,24 +6,40 @@
         <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
         <title> Khris Velasquez Portfolio</title>
-    </head>
     <body>
         <header class="navigation">
             <nav>
               <img src="images/Khristopher Velasquez-logos_white2.png" alt="KV logo" class="logo">
              <ul>
-              <li class="inline-block"><u>About</u></li>
-              <li class="inline-block"><u>Skills</u></li>
-              <li class="inline-block"><u>Work</u></li>
-              <li class="inline-block"><u>Contact</u></li>  
+              <li class="inline-block"><a href="#about" style="color: white">About</a></li>
+              <li class="inline-block"><a href="#mySkills" style="color: white">Skills</a></li>
+              <li class="inline-block"><a href="#myWork" style="color: white">Work</a></li>
+              <li class="inline-block"><u class="contactButton">Contact</u></li>  
              </ul>
             </nav>
         </header> 
-        <section class="heroImg">
+        <section class="heroImg" id="about">
             <div class="content">
              <img class="profilePic" src="images/profile_picture_me.jpg" width="200px" height="200px">
             </div>
-             <button>Resume |</button> 
+
+
+
+             <button class="resumeButton"><a href="#popupRight" role="button" class="btn btn-default" data-toggle="modal-popover" data-placement="right">Resume</a></button> 
+
+
+             <div id="popupRight" class="popover">
+                <div class="arrow"></div>
+                <h3 class="popover-title">Resume Info</h3>
+                <div class="popover-content">
+                    <p>This is where a resume link would go.
+                        <a href="#" class="btn btn-default helloWorld">Close</a>
+                    </p>
+                </div>
+            </div>
+
+
+
              <p>Hey, Im Khristopher Velasquez.<br><br>Welcome to my UX/UI Portfolio!<br>Im a newly skilled UX/UI designer looking to show of skills<br>and love for interactive and meaningful designs.</p>
         </section>
             <br>
@@ -90,5 +106,10 @@
                 <li class="inline-block"><u>Contact</u></li>
             </ul>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/index.js"></script>
 </html>           
